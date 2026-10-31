@@ -1,0 +1,22 @@
+{
+  "manifest_version": "0.3",
+  "name": "calculator",
+  "display_name": "Calculator",
+  "version": "1.0.0",
+  "description": "A basic calculator MCP server with add, subtract, multiply, and divide tools.",
+  "author": {
+    "name": "Madha"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "server/caluculator-server.py",
+    "mcp_config": {
+      "command": "${__dirname}/server/venv/Scripts/python.exe",
+      "args": [
+        "${__dirname}/server/caluculator-server.py"
+      ],
+      "env": {}
+    }
+  },
+  "license": "MIT"
+}
